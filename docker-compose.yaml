@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: tasks-postgres
+    environment:
+      POSTGRES_PASSWORD: sama1234
+    ports:
+      - "5432:5432"
+    restart: always
